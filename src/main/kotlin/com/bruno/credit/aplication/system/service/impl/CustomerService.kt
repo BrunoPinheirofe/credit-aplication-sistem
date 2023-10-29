@@ -8,7 +8,7 @@ import java.lang.RuntimeException
 
 
 @Service
-class CustumerService(
+class CustomerService(
   private val customerRepository: CustomerRepository
 ): ICustomerService {
   override fun save(customer: Customer): Customer = this.customerRepository.save(customer)

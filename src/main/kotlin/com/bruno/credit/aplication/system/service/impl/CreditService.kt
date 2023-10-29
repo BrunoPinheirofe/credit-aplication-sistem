@@ -11,7 +11,7 @@ import java.util.*
 @Service
 class CreditService(
   private val creditRepository: CreditRepository,
-  private val custumerService: CustumerService
+  private val custumerService: CustomerService
 ): ICreditService {
   override fun save(credit: Credit): Credit {
     credit.apply {
